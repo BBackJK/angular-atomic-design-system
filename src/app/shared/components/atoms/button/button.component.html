@@ -1,0 +1,4 @@
+<button (click)="onClick()" [routerLink]="link" [ngClass]="[sizeClassName, typeClassName, displayClassName]">
+  <i [class]="iconClassName" *ngIf="iconClassName"></i>
+  <ng-content></ng-content>
+</button>

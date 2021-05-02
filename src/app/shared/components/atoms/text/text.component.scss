@@ -1,0 +1,73 @@
+@import '../../../../app.component.scss';
+
+.text-color-dark {
+  color: $text-dark-color;
+}
+.text-color-bright {
+  color: $text-bright-color;
+}
+.text-color-disabled {
+  color: $disabled-text-color;
+}
+
+.text-color-primary-50 {
+  color: getPrimaryColor(50);
+}
+.text-color-primary-100 {
+  color: getPrimaryColor(100);
+}
+.text-color-primary-200 {
+  color: getPrimaryColor(200);
+}
+.text-color-primary-300 {
+  color: getPrimaryColor(300);
+}
+.text-color-primary-400 {
+  color: getPrimaryColor(400);
+}
+.text-color-primary-500 {
+  color: getPrimaryColor(500);
+}
+.text-color-primary-600 {
+  color: getPrimaryColor(600);
+}
+.text-color-primary-700 {
+  color: getPrimaryColor(700);
+}
+.text-color-primary-800 {
+  color: getPrimaryColor(800);
+}
+.text-color-primary-900 {
+  color: getPrimaryColor(900);
+}
+
+.text-color-secondary-50 {
+  color: getSecondaryColor(50);
+}
+.text-color-secondary-100 {
+  color: getSecondaryColor(100);
+}
+.text-color-secondary-200 {
+  color: getSecondaryColor(200);
+}
+.text-color-secondary-300 {
+  color: getSecondaryColor(300);
+}
+.text-color-secondary-400 {
+  color: getSecondaryColor(400);
+}
+.text-color-secondary-500 {
+  color: getSecondaryColor(500);
+}
+.text-color-secondary-600 {
+  color: getSecondaryColor(600);
+}
+.text-color-secondary-700 {
+  color: getSecondaryColor(700);
+}
+.text-color-secondary-800 {
+  color: getSecondaryColor(800);
+}
+.text-color-secondary-900 {
+  color: getSecondaryColor(900);
+}
