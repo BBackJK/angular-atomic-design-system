@@ -1,0 +1,63 @@
+@import '../../../../app.component.scss';
+
+button {
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: baseline;
+  overflow: visible;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+}
+
+// button size ; xs (for icon), sm , md , lg / default : md
+.btn-size-xs {
+  @include setWH(30px, 30px);
+}
+
+.btn-size-sm {
+  @include setWH(60px, 30px);
+}
+
+.btn-size-md {
+  @include setWH(90px, 45px);
+}
+
+.btn-size-lg {
+  @include setWH(120px, 60px);
+}
+// button size ; xs (for icon), sm , md , lg
+
+
+.btn-type-base {
+  background-color: $surface-default-color;
+}
+.btn-type-primary {
+  background-color: getPrimaryColor(300);
+}
+.btn-type-secondary {
+  background-color: getSecondaryColor(300);
+}
+.btn-type-disabled {
+  background-color: $disabled-color;
+}
+
+.btn-display-flat {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.btn-display-raised {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.btn-display-icon {
+  // 아이콘 후에 작성
+}
+.btn-display-box-icon {
+  border-radius: 50%;
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
