@@ -1,4 +1,4 @@
-<button (click)="onClick()" [routerLink]="link" [ngClass]="[sizeClassName, typeClassName, displayClassName]">
+<button (click)="onClick()" [routerLink]="link" [ngClass]="[sizeClassName, typeClassName, displayClassName]" [disabled]="isDisabled">
   <i [class]="iconClassName" *ngIf="iconClassName"></i>
   <ng-content></ng-content>
 </button>

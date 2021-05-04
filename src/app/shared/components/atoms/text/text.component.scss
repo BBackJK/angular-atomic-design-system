@@ -1,5 +1,25 @@
 @import '../../../../app.component.scss';
 
+/**
+* ==========================================================
+* Text
+* ==========================================================
+* - Text Color
+* - Text Size
+*/
+
+
+/** 
+*
+*   Text Color
+*
+* - dark        : black (default)
+* - bright      : white
+* - disabled    : gray
+* - error       : red
+* - primary     : primary color meta
+* - secondary   : secondary color meta
+*/
 .text-color-dark {
   color: $text-dark-color;
 }
@@ -8,6 +28,9 @@
 }
 .text-color-disabled {
   color: $disabled-text-color;
+}
+.text-color-error {
+  color: $error-color;
 }
 
 .text-color-primary-50 {
@@ -70,4 +93,35 @@
 }
 .text-color-secondary-900 {
   color: getSecondaryColor(900);
+}
+
+/** 
+*
+*   Text Size
+*
+* - xs        : xsmall
+* - sm        : small
+* - md        : medium (default)
+* - lg        : large
+* - xl        : x large
+*/
+
+.text-size-xs {
+  font-size: 0.8em;
+}
+
+.text-size-sm {
+  font-size: 1em;
+}
+
+.text-size-md {
+  font-size: 18px;
+}
+
+.text-size-lg {
+  font-size: 1.5em;
+}
+
+.text-size-xl {
+  font-size: 2em;
 }

@@ -8,10 +8,12 @@ import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angu
 export class ButtonComponent implements OnInit, OnChanges {
 
   @Input() link: string;
-  @Input() icon: string;
+  @Input() isDisabled: boolean = false;
+
   @Input() size: string;
   @Input() type: string;
   @Input() display: string;
+  @Input() icon: string;
 
   @Output() event = new EventEmitter();
 

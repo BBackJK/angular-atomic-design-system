@@ -4,7 +4,7 @@ import { AtomsModules } from './atoms/atoms.module';
 
 @NgModule({
   imports: [],
-  exports: [],
+  exports: [ AtomsModules ],
   declarations: []
 })
 export class ComponentsModule {}

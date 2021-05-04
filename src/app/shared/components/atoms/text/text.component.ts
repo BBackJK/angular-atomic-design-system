@@ -19,14 +19,20 @@ export class TextComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnChanges(): void {
+    this.setDefaultTextType();
     this.setClassName();
   }
   ngOnInit(): void {
+    this.setDefaultTextType();
     this.setClassName();
   }
 
+  setDefaultTextType(): void {
+    this.type = this.type ? this.type : 'inline'
+  }
+
   setClassName(): void {
-    this.textSizeClassName = this.textSize ? 'text-size-' + this.textSize : 'text-size-default';
+    this.textSizeClassName = this.textSize ? 'text-size-' + this.textSize : 'text-size-md';
     this.textColorClassName = this.textColor ? 'text-color-' + this.textColor : 'text-color-dark';
   }
 }
