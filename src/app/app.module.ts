@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from '@pages/app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,12 +15,13 @@ import { ComponentsModule } from '@shared/components/components.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    FormsModule,
     
     PagesModule,
-    ComponentsModule
+    ComponentsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
