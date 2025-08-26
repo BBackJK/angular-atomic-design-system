@@ -1,0 +1,25 @@
+@import '../../../../app.component.scss';
+
+li {
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+
+  & > span:hover {
+    text-decoration: underline 3px getPrimaryColor(300);
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // height: 10px;
+    // background: getPrimaryColor(300);
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+    transform: scaleX(0) translate3d(0, 0, 0);
+  }
+}
+
+.list-horizontal {
+  float:left;
+}

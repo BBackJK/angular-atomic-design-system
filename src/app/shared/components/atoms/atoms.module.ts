@@ -5,14 +5,30 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonComponent } from './button/button.component';
 import { TextComponent } from './text/text.component';
 import { LinkComponent } from './link/link.component';
-
 import { InputRadioComponent, InputTextComponent, InputCheckboxComponent } from './input';
+import { ListComponent } from './list/list.component';
 
 import { AppRoutingModule } from '@pages/app-routing.module';
 
 @NgModule({
   imports: [ CommonModule, AppRoutingModule, ReactiveFormsModule ],
-  exports: [ ButtonComponent, TextComponent, LinkComponent, InputRadioComponent, InputTextComponent, InputCheckboxComponent ],
-  declarations: [ ButtonComponent, TextComponent, LinkComponent, InputTextComponent, InputRadioComponent, InputCheckboxComponent ]
+  exports: [ 
+    ButtonComponent
+    , TextComponent
+    , LinkComponent
+    , InputRadioComponent
+    , InputTextComponent
+    , InputCheckboxComponent
+    , ListComponent
+  ],
+  declarations: [ 
+    ButtonComponent
+    , TextComponent
+    , LinkComponent
+    , InputTextComponent
+    , InputRadioComponent
+    , InputCheckboxComponent 
+    , ListComponent
+  ]
 })
 export class AtomsModules {}

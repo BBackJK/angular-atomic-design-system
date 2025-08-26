@@ -3,7 +3,7 @@
 .checkbox-container {
   position: relative;
   padding-left: 30px;
-  margin-bottom: 12px;
+  // margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -51,7 +51,6 @@ input {
     radius: 30%;
     width: 2px;
   };
-  margin-left: 3px;
 
   &::after {
     content: "";
@@ -76,7 +75,7 @@ input {
 
 .checkbox-contents {
   font-size: 18px;
-  margin-right: 10px;
+  // margin-right: 10px;
 }
 
 .display-inline-flex {
